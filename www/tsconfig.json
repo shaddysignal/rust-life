@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "esNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "utils/*": [ "./src/utils/*" ],
+      "components/*": [ "./src/components/*" ]
+    },
+  },
+  "include": ["src"]
+}

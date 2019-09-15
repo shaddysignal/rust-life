@@ -1,0 +1,38 @@
+{
+  "name": "webrtc-hell",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.136",
+    "@types/react": "^16.8.24",
+    "@types/react-dom": "^16.8.5",
+    "@types/react-hot-loader": "^4.1.0",
+    "lodash": "^4.17.15",
+    "pixi.js": "^5.0.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-pixi-fiber": "^0.9.0",
+    "webrtc-hell-rust": "file:../pkg"
+  },
+  "devDependencies": {
+    "@types/webpack": "^4.32.1",
+    "@types/webpack-env": "^1.14.0",
+    "copy-webpack-plugin": "^5.0.0",
+    "css-loader": "^3.1.0",
+    "file-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "postcss-loader": "^3.0.0",
+    "react-hot-loader": "^4.12.10",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.3.6"
+  }
+}
