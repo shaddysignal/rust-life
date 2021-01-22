@@ -74,8 +74,6 @@ impl Universe {
                 let cell = self.cells[idx];
                 let live_neighbours = self.live_neighbour_count(w, h);
 
-                //log!("cell[{}, {}] is initially {:?} and has {} live neighbors", w, h, cell, live_neighbours);
-
                 let next_cell_state = match (cell, live_neighbours) {
                     // Rule 1: Any live cell without specific live neighbours number around
                     // dies, as if caused by underpopulation or overpopulation.
@@ -89,8 +87,6 @@ impl Universe {
                     // All other cells remain in the same state.
                     (otherwise, _) => otherwise, 
                 };
-
-                //log!("    it becomes {:?}", next_cell_state);
 
                 next[idx] = next_cell_state;
             }
